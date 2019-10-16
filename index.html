@@ -36,8 +36,8 @@
             text-align: center;
         }
 
-        .row {
-            display: flex;
+        .row > * {
+            display: inline-block;
         }
 
         .row .title {
@@ -45,18 +45,12 @@
         }
 
         .row .data {
-            flex: 1;
             text-align: right;
         }
 
-        .split-2 {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-        }
-
         .split-2 > div {
-            width: 48.75%;
+            display: inline-table;
+            width: 45%;
         }
 
         .split-2 > div:nth-child(odd) {
@@ -101,6 +95,11 @@
 
         .summary h1 {
             margin: 1em 0;
+        }
+
+        .loadInfo .split-2{
+            position: relative;
+            display: block;
         }
 
         .loadInfo li {
@@ -237,7 +236,6 @@
                             <p class="data">John Stamos</p>
                         </div>
                     </div>
-
                 </div>
                 <div class="paymentsReceived">
                     <p>Payments Received (Monthly Payment Plan)</p>
