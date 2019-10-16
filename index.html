@@ -3,7 +3,166 @@
 <head>
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="styles.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,500,700&display=swap');
+
+        * {
+            margin: 0;
+            font-family: 'Bai Jamjuree', sans-serif;
+            color: #19313C;
+        }
+
+        body {
+            padding: 2em;
+            font-size: 1.5em;
+        }
+
+        h1 {
+            font-weight: 500;
+            font-size: 1em;
+        }
+
+        h2 {
+            font-size: 0.875em;
+            font-weight: normal;
+        }
+
+        p {
+            font-size: 0.75em;
+        }
+
+        .center {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .row .title {
+            width: 10em
+        }
+
+        .row .data {
+            flex: 1;
+            text-align: right;
+        }
+
+        .split-2 {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        .split-2 > div {
+            width: 48.75%;
+        }
+
+        .split-2 > div:nth-child(odd) {
+            margin-right: 2.5%;
+        }
+
+        .box {
+            border: 2px solid black;
+            padding: 0.5em 0.75em;
+            border-radius: 0.3125em;
+        }
+
+        .box > * {
+            margin-bottom: 0.5em;
+        }
+
+        .box.green {
+            border-color: #44C6B9;
+        }
+
+        .box.red {
+            border-color: #F08975;
+        }
+
+        .header {
+            display: flex;
+            border-bottom: 2px solid black;
+            padding-bottom: 1em;
+        }
+
+        .header .info {
+            flex: 1
+        }
+
+        .header .logo {
+            background: url('https://unsplash.it/1000/500') center center /cover no-repeat;
+            width: 50%
+        }
+
+        .summary {
+        }
+
+        .summary h1 {
+            margin: 1em 0;
+        }
+
+        .loadInfo li {
+            font-size: 0.75em;
+        }
+
+        .loadInfo li .content {
+            font-size: 1.3333em;
+            padding-left: 0.25em;
+        }
+
+        .netBalance {
+            margin: 1em 0;
+        }
+
+        .loans {
+            margin-top: 1em;
+        }
+
+        .loadInfo {
+            margin-top: 1em;
+        }
+
+        .paymentsReceived {
+            margin-top: 1em;
+        }
+
+        .paymentData {
+            margin-top: 0.5em;
+            width: 15em;
+        }
+
+        .paymentsReceived .row:nth-child(odd) {
+            background: #EFEFEF;
+        }
+
+        .paymentsReceived .row:nth-child(even) {
+            background: #FAFAFA;
+        }
+
+        .paymentsReceived .row > * {
+            padding: 0.75em 1em;
+            font-size: 0.625em;
+        }
+
+        .paymentsReceived .amount {
+            width: 5em;
+        }
+
+        .total {
+            display: flex;
+            border-top: 1px solid black;
+            padding: 0.5em 1em;
+            margin: 1.5em 0
+        }
+
+        .total .title {
+            flex: 1;
+            text-align: right;
+            padding-right: 5em;
+        }
+    </style>
 
     <title>Template</title>
 </head>
