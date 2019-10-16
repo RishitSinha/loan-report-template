@@ -76,18 +76,24 @@
         }
 
         .header {
-            display: flex;
             border-bottom: 2px solid black;
             padding-bottom: 1em;
+            height: 4em;
+            position: relative;
         }
 
         .header .info {
-            flex: 1
+            display: inline-block;
+            width: 72.5%;
+            height: 100%;
+            transform: translate(0, -0.5em);
         }
 
         .header .logo {
+            display: inline-block;
             background: url('https://unsplash.it/1000/500') center center /cover no-repeat;
-            width: 50%
+            width: 25%;
+            height: 100%;
         }
 
         .summary {
